@@ -1,5 +1,7 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; 
+    color: #434455;
+    background-color: #FFFFFF;
 }
 
 ul {
@@ -28,13 +30,16 @@ a {
 
 .navigation-link:hover {color: #404bbf;}
 
+.contact {font-style: normal;}
+
 .contact-link {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #434455;}
 
-.contact-link:hover {color: #404bbf;}
+.contact-link:hover, .contact-link:focus {color: #404bbf;}
+
 
 .intro {background-color: #2e2f42;}
 
