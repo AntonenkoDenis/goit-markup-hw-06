@@ -157,10 +157,9 @@ gap: 40px;
     padding-bottom: 120px;
 }
 
-.visually-hidden { display: none;
+.features-title {
+    display: none;
 }
-
-/* .features-title {} */
 
 .features-list {display: flex;
     gap: 24px;
