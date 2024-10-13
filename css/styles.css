@@ -199,10 +199,14 @@ gap: 24px;
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
-    margin-bottom: 72px;
+    max-width: 162px;
+    margin: 0 auto 72px auto;
+    white-space: nowrap;
 }
 
-/* .team-list {} */
+.team-list {display: flex;
+gap: 24px;
+}
 
 .team-item {
     background-color: #FFFFFF;
@@ -250,10 +254,16 @@ gap: 24px;
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
-    margin-bottom: 72px;
+    max-width: 218px;
+    margin: 0 auto 72px auto;
+    white-space: nowrap;
     }
 
-/* .portfolio-list {} */
+.portfolio-list {display: flex;
+flex-wrap: wrap;
+column-gap: 24px;
+row-gap: 48px;
+}
 
 /* .portfolio-item {} */
 
