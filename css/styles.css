@@ -36,9 +36,8 @@ h6 {
 /* ------------------------------------HEADER----------------------------------- */
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #e7e9fc
+    border-bottom: 1px solid #e7e9fc;
+    padding: 24px 0 24px;
 }
 
 .header-container {display: flex;
@@ -56,12 +55,12 @@ align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px
     
 }
 
 .navigation-logo-color {
     color: #2e2f42;
-    margin-right: 76px;
 }
 
 .navigation-list {display: flex;
@@ -254,6 +253,7 @@ gap: 24px;
     padding-right: 16px;
     padding-bottom: 32px;
     padding-left: 16px;
+    border: 1px solid #e7e9fc;
 }
 
 .portfolio {
@@ -274,10 +274,11 @@ gap: 24px;
     white-space: nowrap;
     }
 
-.portfolio-list {display: flex;
-flex-wrap: wrap;
-column-gap: 24px;
-row-gap: 48px;
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 /* .portfolio-item {} */
@@ -316,6 +317,8 @@ row-gap: 48px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-color {
@@ -327,10 +330,8 @@ row-gap: 48px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin-top: 16px;
+    max-width: 264px;
 }
-
-
 
 
 
