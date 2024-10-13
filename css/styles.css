@@ -40,7 +40,10 @@ h6 {
     padding-bottom: 24px;
 }
 
-/* .navigation {} */
+.header-container {display: flex;
+align-items: center;}
+
+.navigation {display: flex;}
 
 .navigation-logo {
     font-family: 'Raleway', sans-serif;
@@ -50,13 +53,17 @@ h6 {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 100px;
 }
 
 .navigation-logo-color {
     color: #2e2f42;
 }
 
-/* .navigation-list {} */
+.navigation-list {display: flex;
+align-items: center;
+gap: 40px;
+}
 
 /* .navigation-item {} */
 
@@ -73,9 +80,12 @@ h6 {
     color: #404bbf;
 }
 
-.contact {font-style: normal;}
+.contact {font-style: normal;
+margin-left: auto;}
 
-/* .contact-list {} */
+.contact-list {display: flex;
+gap: 40px;
+}
 
 /* .contact-item {} */
 
@@ -108,7 +118,8 @@ h6 {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    margin-bottom: 48px;
+    max-width: 496px;
+    margin: 0 auto 48px auto;
 }
 
 .order-button {
@@ -119,6 +130,11 @@ h6 {
     color: #fff;
     cursor: pointer;
     background-color: #4D5AE5;
+    padding: 16px 40px;
+    border-radius: 4px;
+    border: none;
+    display: block;
+    margin: auto
 }
 
 .order-button:hover, 
@@ -135,9 +151,14 @@ h6 {
 
 /* .features-title {} */
 
-/* .features-list {} */
+.features-list {display: flex;
+gap: 24px;
+}
 
-/* .feature-item {} */
+.feature-item {
+    width: calc((100% - 3 * 24px)) / 4;
+
+}
 
 .feature-name {
     font-weight: 500;
