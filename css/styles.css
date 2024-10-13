@@ -197,10 +197,7 @@ flex-basis: calc((100% - 72px) / 4);
 /* -------------------------------------TEAM-------------------------------------- */
 
 .team-info {
-    padding-top: 32px;
-    padding-right: 16px;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 32px 0;
 }
 
 .team {
@@ -229,6 +226,7 @@ gap: 24px;
 .team-item {
     background-color: #FFFFFF;
     flex-basis: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 /* .team-item-photo {} */
