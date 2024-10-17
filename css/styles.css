@@ -83,6 +83,7 @@ align-items: center;
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
+    position: relative;
 }
 
 .active::after {
@@ -92,6 +93,9 @@ align-items: center;
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
 }
 
 .navigation-link:hover, 
@@ -327,8 +331,9 @@ flex-basis: calc((100% - 72px) / 4);
     justify-content: center;
 }
 
-.team-soc-link:hover {
-    background-color: #31d0aa;
+.team-soc-link:hover, 
+.team-soc-link:focus {
+    background-color: #404bbf;
 }
 
 .icon {
