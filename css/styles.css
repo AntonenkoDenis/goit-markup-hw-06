@@ -304,21 +304,14 @@ flex-basis: calc((100% - 72px) / 4);
 
 .team-icon {
     display: flex;
+    gap: 24px;
     list-style: none;
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     padding-top: 8px;
     padding-bottom: 32px;
-}
-
-.team-icon li {
-    margin-right: 24px;
-}
-
-.team-icon li:last-child {
-    margin-right: 0;
 }
 
 .team-soc-link {
