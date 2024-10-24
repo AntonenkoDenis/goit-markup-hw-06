@@ -780,7 +780,10 @@ position: relative;
     margin-right: 8px;
 }
 
-/* .modal-check-icon {} */
+.modal-check-icon {
+    width: 10px;
+    height: 8px;
+}
 
 .modal-check-policy {
     margin-left: 5px;
