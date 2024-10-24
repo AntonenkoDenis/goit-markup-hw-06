@@ -777,9 +777,15 @@ position: relative;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
 
 /* .modal-check-icon {} */
+
+.modal-check-policy {
+    margin-left: 5px;
+    color: #4d5ae5;
+}
 
 
 .modal-button {
