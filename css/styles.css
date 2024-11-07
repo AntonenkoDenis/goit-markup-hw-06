@@ -47,16 +47,17 @@ img {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
-    padding: 24px 0 24px;
+    /* padding: 24px 0 24px; */
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
-        /* padding: 16px 0 16px; */
+    padding: 16px 0 16px;
+    max-height: 56px;
 }
 
 .header-container {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .navigation {
@@ -72,7 +73,8 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px;
+    /* margin-right: 76px; */
+    margin-right: 0;
     margin-left: 0; 
 }
 
@@ -86,7 +88,7 @@ img {
     gap: 40px;
     padding-left: 0;
     margin: 0;
-    /* display: none; */
+    display: none;
 }
 
 .navigation-link {
@@ -127,7 +129,7 @@ img {
 .contact-list {
     display: flex;
     gap: 40px;
-    /* display: none; */
+    display: none;
 }
 
 .contact-link {
@@ -146,11 +148,9 @@ img {
 
 .menu-open-btn {
     display: flex;
-    padding: 0;
+    padding: 4.8px 3.6px;
     width: 24px;
     height: 24px;
-    align-items: center;
-    justify-content: center;
     border: none;
     background-color: #fff;
 }
@@ -158,6 +158,8 @@ img {
 .menu-open-icon {
     width: 16.8px;
     height: 14.4px;
+    align-items: center;
+    justify-items: center;
 }
 
 /* -------------------------------------MAIN------------------------------------ */
@@ -307,13 +309,13 @@ width: 100%;
     background: #f4f4fd;
     /* padding-top: 120px;
     padding-bottom: 120px; */
-    padding-bottom: 96px;
-    padding-top: 96px;
 }
 
 .team > .container {
     padding-left: 28px;
     padding-right: 28px;
+    padding-bottom: 96px;
+    padding-top: 96px;
 }
 
 
@@ -351,9 +353,9 @@ width: 100%;
         0 1px 6px 0 rgba(46, 47, 66, 0.08);
     }
 
-    .team-info {
-        padding: 32px 0;
-    }
+.team-info {
+    padding: 32px 0;
+}
 
 
 .team-name {
@@ -896,23 +898,25 @@ position: relative;
         padding-right: 16px;
     }
 
-        /* .navigation-logo {
-            margin-right: 120px;
-        }
+    .header {
+        max-width: 768px;
+        max-height: 72px;
+    }
+
+    .navigation-logo {
+        margin-right: 120px;
+    }
 
     .navigation-list {
         display: flex;
-    }
-
-    .navigation-link {
-        padding-bottom: 20px;
+        padding-right: 121px;
     }
 
     .contact-list {
         display: flex;
         flex-wrap: wrap;
         gap: 12px;
-        padding-left: 121px;
+        padding: 0;
     }
 
     .contact-link {
@@ -928,7 +932,7 @@ position: relative;
 
     .menu-open-icon {
         display: none;
-    } */
+    }
 
     .intro {
         padding-top: 112px;
@@ -988,6 +992,35 @@ position: relative;
         width: calc((100% - 24px) / 2);
     }
 
+    .footer-description {
+        max-width: 264px;
+        max-height: 112px;
+        padding-bottom: 0;
+    }
+
+    .footer-icon-container {
+        flex-wrap: wrap;
+        flex-direction: row;
+        text-align: start;
+        align-items: baseline;
+        gap: 72px 24px;
+        padding-left: 120px;
+    }
+
+    .social-list {
+        padding-bottom: 0;
+    }
+
+    .email-input {
+        max-width: 453px;
+        height: 80px;
+    }
+
+    .footer-form {
+        flex-direction: row;
+        gap: 24px;
+    }
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -999,21 +1032,33 @@ position: relative;
         padding-right: 15px;
     }
 
-    /* .header {
+    .header {
+        max-width: 1158px;
         padding: 24px 0 24px;
+    }
+
+    .header-container {
+        align-items: center;
+    }
+
+    .navigation-logo {
+        margin-right: 76px;
     }
 
     .navigation-list {
         display: flex;
     }
 
-    .navigation-link {
-        padding: 24px 0;
-    }
-
     .contact-list {
         display: flex;
-    } */
+        gap: 40px;
+    }
+
+    .contact-link {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+    }
 
     .intro {
         padding-top: 188px;
@@ -1099,4 +1144,38 @@ position: relative;
     .portfolio-item {
         width: calc((100% - 48px) / 3);
     }
+
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-description {
+        max-width: 264px;
+    }
+
+    .footer-icon-container {
+        align-items: baseline;
+        gap: 0;
+    }
+
+    .logo-description {
+        margin-right: 99px;
+    }
+
+    .email-input {
+        margin-left: 80px;
+        max-width: 453px;
+        height: 80px;
+    }
+
+    .footer-form {
+        gap: 24px;
+    }
+
+    .footer-input {
+        width: 264px;
+    }
+
+
 }
