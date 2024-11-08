@@ -52,7 +52,6 @@ img {
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
     padding: 16px 0 16px;
-    max-height: 56px;
 }
 
 .header-container {
@@ -616,6 +615,10 @@ width: 100%;
     padding-bottom: 96px;
 }
 
+.logo-description {
+    margin-bottom: 72px;
+}
+
 .footer-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -625,7 +628,7 @@ width: 100%;
     text-transform: uppercase;
     color: #4d5ae5;
     display: inline-block;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
 }
 
 .footer-logo-color {
@@ -638,9 +641,12 @@ width: 100%;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     /* max-width: 264px; */
-    min-width: 288px;
-    padding-bottom: 72px;
+    width: 288px;
     text-align: left;
+}
+
+.social-container {
+    margin-bottom: 72px;
 }
 
 .footer-icon-container {
@@ -661,7 +667,7 @@ width: 100%;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #fff;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
 }
 
 .social-list {
@@ -670,7 +676,6 @@ width: 100%;
     padding: 0;
     margin: 0;
     list-style: none;
-    padding-bottom: 72px;
 }
 
 .social-item {
@@ -698,21 +703,21 @@ width: 100%;
     fill: #f4f4fd;
 }
 
+.email-input {
+    /* margin-left: 80px; */
+    /* max-width: 453px;
+    height: 80px; */
+    width: 288px;
+    height: 136px;
+}
+
 .footer-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #fff;
-    margin-bottom: 16px;
-}
-
-.email-input {
-    /* margin-left: 80px; */
-    /* max-width: 453px;
-    height: 80px; */
-    max-width: 288px;
-    height: 136px;
+    padding-bottom: 16px;
 }
 
 .footer-form { 
@@ -722,9 +727,6 @@ width: 100%;
     flex-direction: column;
     align-items: center;
 }
-
-/* .footer_label {    
-} */
 
 .footer-input { 
     /* width: 264px; */
@@ -1001,18 +1003,13 @@ position: relative;
         padding-right: 16px;
     }
 
-    .header {
-        max-width: 768px;
-        max-height: 72px;
-    }
-
     .navigation-logo {
         margin-right: 120px;
     }
 
     .navigation-list {
         display: flex;
-        padding-right: 121px;
+        margin-right: 122px;
     }
 
     .contact-list {
@@ -1095,10 +1092,18 @@ position: relative;
         width: calc((100% - 24px) / 2);
     }
 
+    .logo-description {
+        margin-bottom: 72px;
+        margin-right: 24px;
+    }
+
     .footer-description {
         max-width: 264px;
-        max-height: 112px;
-        padding-bottom: 0;
+        height: 112px;
+    }
+
+    .social-container {
+        margin: 0;
     }
 
     .footer-icon-container {
@@ -1106,16 +1111,12 @@ position: relative;
         flex-direction: row;
         text-align: start;
         align-items: baseline;
-        gap: 72px 24px;
-        padding-left: 120px;
-    }
-
-    .social-list {
-        padding-bottom: 0;
+        padding-left: 108px;
+        padding-right: 164px;
     }
 
     .email-input {
-        max-width: 453px;
+        width: 453px;
         height: 80px;
     }
 
@@ -1123,6 +1124,11 @@ position: relative;
         flex-direction: row;
         gap: 24px;
     }
+
+    .footer-input {
+        width: 264px;
+    }
+
 
     .modal {
         width: 408px;
@@ -1141,7 +1147,6 @@ position: relative;
     }
 
     .header {
-        max-width: 1158px;
         padding: 24px 0 24px;
     }
 
@@ -1153,12 +1158,7 @@ position: relative;
         margin-right: 76px;
     }
 
-    .navigation-list {
-        display: flex;
-    }
-
     .contact-list {
-        display: flex;
         gap: 40px;
     }
 
@@ -1187,9 +1187,6 @@ position: relative;
         }
     
     .intro-title {
-        font-size: 56px;
-        line-height: 107%;
-        max-width: 496px;
         margin: 0 auto 48px auto;
     }
     
@@ -1225,13 +1222,8 @@ position: relative;
         font-weight: 400;
     }
 
-    .team {
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
 
     .team-list {
-        gap: 24px;
         flex-wrap: nowrap;
     }
 
@@ -1243,11 +1235,6 @@ position: relative;
         padding-top: 120px;
         padding-bottom: 120px;
     }
-
-    .portfolio-list {
-        column-gap: 24px;
-        row-gap: 48px;
-    }
     
     .portfolio-item {
         width: calc((100% - 48px) / 3);
@@ -1258,32 +1245,13 @@ position: relative;
         padding-bottom: 100px;
     }
 
-    .footer-description {
-        max-width: 264px;
-    }
-
-    .footer-icon-container {
-        align-items: baseline;
-        gap: 0;
-    }
-
     .logo-description {
-        margin-right: 99px;
+        margin-right: 120px;
+        margin-bottom: 0;
     }
 
-    .email-input {
-        margin-left: 80px;
-        max-width: 453px;
-        height: 80px;
+    .social-container {
+        margin-right: 80px;
     }
-
-    .footer-form {
-        gap: 24px;
-    }
-
-    .footer-input {
-        width: 264px;
-    }
-
 
 }
